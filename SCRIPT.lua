@@ -1,4 +1,4 @@
--- PJKUNG HUB 🤡 (Official GitHub Version)
+--// PJKUNG HUB 🤡 FINAL STABLE
 
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
@@ -7,17 +7,15 @@ local player = Players.LocalPlayer
 local defaultSpeed = 16
 local fastSpeed = 50
 
+-- ใช้ Asset ID (ขึ้นแน่นอน)
 local iconID = "rbxassetid://108063034683152"
-
-Icon.Image = iconID
-Open.Image = iconID
 
 -- GUI
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "PJKUNG_HUB"
 ScreenGui.Parent = game.CoreGui
 
--- MAIN FRAME
+-- MAIN
 local Main = Instance.new("Frame", ScreenGui)
 Main.Size = UDim2.new(0,600,0,380)
 Main.Position = UDim2.new(0.5,-300,0.5,-190)
@@ -34,12 +32,12 @@ Sidebar.BackgroundColor3 = Color3.fromRGB(25,25,25)
 Sidebar.BorderSizePixel = 0
 Instance.new("UICorner", Sidebar).CornerRadius = UDim.new(0,18)
 
--- ICON IN GUI
+-- ICON
 local Icon = Instance.new("ImageLabel", Sidebar)
 Icon.Size = UDim2.new(0,65,0,65)
 Icon.Position = UDim2.new(0.5,-32,0,20)
 Icon.BackgroundTransparency = 1
-Icon.Image = iconURL
+Icon.Image = iconID
 
 -- TITLE
 local Title = Instance.new("TextLabel", Sidebar)
@@ -51,7 +49,7 @@ Title.Font = Enum.Font.GothamBold
 Title.TextSize = 18
 Title.TextColor3 = Color3.fromRGB(255,255,255)
 
--- CONTENT AREA
+-- CONTENT
 local Content = Instance.new("Frame", Main)
 Content.Position = UDim2.new(0,185,0,30)
 Content.Size = UDim2.new(1,-205,1,-60)
@@ -114,7 +112,7 @@ local Open = Instance.new("ImageButton", ScreenGui)
 Open.Size = UDim2.new(0,90,0,90)
 Open.Position = UDim2.new(0,25,0.5,-45)
 Open.BackgroundColor3 = Color3.fromRGB(28,28,28)
-Open.Image = iconURL
+Open.Image = iconID
 Open.Active = true
 Open.Draggable = true
 Open.BorderSizePixel = 0
