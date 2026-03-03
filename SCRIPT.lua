@@ -7,7 +7,10 @@ local player = Players.LocalPlayer
 local defaultSpeed = 16
 local fastSpeed = 50
 
-local iconURL = "https://raw.githubusercontent.com/PJKUNGHUB/scripthub/main/icon.png"
+local iconID = "rbxassetid://108063034683152"
+
+Icon.Image = iconID
+Open.Image = iconID
 
 -- GUI
 local ScreenGui = Instance.new("ScreenGui")
